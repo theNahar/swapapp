@@ -14,6 +14,7 @@ import {
   tickPosition,
   Trade as V3Trade,
   u32ToSeed,
+  u16ToSeed,
 } from '@cykura/sdk'
 import { Currency, Percent, TradeType, Token as UniToken, BigintIsh, CurrencyAmount } from '@cykura/sdk-core'
 import * as anchor from '@project-serum/anchor'
@@ -26,7 +27,6 @@ import { useSolana } from '@saberhq/use-solana'
 import { Wallet } from '@project-serum/anchor/dist/cjs/provider'
 import { BN } from '@project-serum/anchor'
 import { ASSOCIATED_TOKEN_PROGRAM_ID, NATIVE_MINT, Token, TOKEN_PROGRAM_ID } from '@solana/spl-token'
-import { u16ToSeed } from 'state/mint/v3/utils'
 import { BITMAP_SEED, OBSERVATION_SEED, TICK_SEED } from 'constants/tokens'
 import { useSwapState } from 'state/swap/hooks'
 import { useCurrency } from './Tokens'

@@ -1,4 +1,4 @@
-import { useCallback, useContext, useMemo, useState } from 'react'
+/* import { useCallback, useContext, useMemo, useState } from 'react'
 import { useWalletKit } from '@gokiprotocol/walletkit'
 import { useSolana } from '@saberhq/use-solana'
 import { Currency, CurrencyAmount, Percent } from '@cykura/sdk-core'
@@ -1069,18 +1069,20 @@ export default function AddLiquidity({
                     title={<span>Selected Range</span>}
                     inRange={!outOfRange}
                   />
-                  {/* <LiquidityChartRangeInput
-                    currencyA={baseCurrency ?? undefined}
-                    currencyB={quoteCurrency ?? undefined}
-                    feeAmount={feeAmount}
-                    ticksAtLimit={{ [Bound.LOWER]: false, [Bound.UPPER]: false }}
-                    price={price ? parseFloat((invertPrice ? price.invert() : price).toSignificant(8)) : undefined}
-                    priceLower={priceLower}
-                    priceUpper={priceUpper}
-                    onLeftRangeInput={onLeftRangeInput}
-                    onRightRangeInput={onRightRangeInput}
-                    interactive={!hasExistingPosition}
-                  /> */}
+                  {feeAmount && (
+                    <LiquidityChartRangeInput
+                      currencyA={baseCurrency ?? undefined}
+                      currencyB={quoteCurrency ?? undefined}
+                      feeAmount={feeAmount}
+                      ticksAtLimit={{ [Bound.LOWER]: false, [Bound.UPPER]: false }}
+                      price={price ? parseFloat((invertPrice ? price.invert() : price).toSignificant(8)) : undefined}
+                      priceLower={priceLower}
+                      priceUpper={priceUpper}
+                      onLeftRangeInput={onLeftRangeInput}
+                      onRightRangeInput={onRightRangeInput}
+                      interactive={!hasExistingPosition}
+                    />
+                  )}
                 </>
               ) : (
                 <>
@@ -1205,18 +1207,20 @@ export default function AddLiquidity({
                       feeAmount={feeAmount}
                     />
 
-                    {/* <LiquidityChartRangeInput
-                      currencyA={baseCurrency ?? undefined}
-                      currencyB={quoteCurrency ?? undefined}
-                      feeAmount={feeAmount}
-                      ticksAtLimit={{ [Bound.LOWER]: false, [Bound.UPPER]: false }}
-                      price={price ? parseFloat((invertPrice ? price.invert() : price).toSignificant(8)) : undefined}
-                      priceLower={priceLower}
-                      priceUpper={priceUpper}
-                      onLeftRangeInput={onLeftRangeInput}
-                      onRightRangeInput={onRightRangeInput}
-                      interactive={!hasExistingPosition}
-                    /> */}
+                    {feeAmount && (
+                      <LiquidityChartRangeInput
+                        currencyA={baseCurrency ?? undefined}
+                        currencyB={quoteCurrency ?? undefined}
+                        feeAmount={feeAmount}
+                        ticksAtLimit={{ [Bound.LOWER]: false, [Bound.UPPER]: false }}
+                        price={price ? parseFloat((invertPrice ? price.invert() : price).toSignificant(8)) : undefined}
+                        priceLower={priceLower}
+                        priceUpper={priceUpper}
+                        onLeftRangeInput={onLeftRangeInput}
+                        onRightRangeInput={onRightRangeInput}
+                        interactive={!hasExistingPosition}
+                      />
+                    )}
 
                     {price && baseCurrency && quoteCurrency && !noLiquidity && (
                       <LightCard style={{ padding: '12px' }}>
@@ -1329,3 +1333,6 @@ export default function AddLiquidity({
     </>
   )
 }
+ */
+
+export {}

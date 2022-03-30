@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { NonfungiblePositionManager, Pool, Position, u32ToSeed } from '@cykura/sdk'
+import { NonfungiblePositionManager, Pool, Position, u32ToSeed, u16ToSeed } from '@cykura/sdk'
 import { usePool } from 'hooks/usePools'
 import { useToken } from 'hooks/Tokens'
 import { useV3PositionFromTokenId } from 'hooks/useV3Positions'
@@ -50,7 +50,6 @@ import {
   SOL_LOCAL,
   WSOL_LOCAL,
 } from 'constants/tokens'
-import { u16ToSeed } from 'state/mint/v3/utils'
 import { Transaction } from '@solana/web3.js'
 
 const { BN, web3 } = anchor

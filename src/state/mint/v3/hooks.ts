@@ -261,6 +261,7 @@ export function useV3DerivedMintInfo(
   }, [existingPosition, feeAmount, invertPrice, leftRangeTypedValue, rightRangeTypedValue, token0, token1])
 
   const { [Bound.LOWER]: tickLower, [Bound.UPPER]: tickUpper } = ticks || {}
+  // console.log(tickLower, tickUpper)
 
   // console.log(
   //   `Current Tick is ${poolForPosition?.tickCurrent.toString()}\tTick lower is ${tickLower?.toString()}\tTick upper is ${tickUpper?.toString()}`
