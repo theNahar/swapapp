@@ -47,7 +47,7 @@ ReactDOM.render(
           },
           devnet: {
             name: 'devnet',
-            endpoint: 'https://api.devnet.solana.com',
+            endpoint: 'https://api.devnet.solana.com/',
           },
         }}
         commitment="processed"
